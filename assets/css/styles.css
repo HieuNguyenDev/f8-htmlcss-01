@@ -6,6 +6,11 @@
     --primary-color: #0F1B4C;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -321,13 +326,14 @@ a {
 }
 
 .list-featured {
+    --cols: 3;
     margin-top: 70px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
     gap: 30px;
 }
 
 .item-featured {
-    flex: 1;
     background: #fff;
     border-radius: 12px;
 }
