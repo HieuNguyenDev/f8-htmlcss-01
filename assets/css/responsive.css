@@ -76,6 +76,34 @@
     .separate {
         border-top: 1.5px solid #ebebeb;
     }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero .info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .desc {
+        width: 60%;
+        margin: 30px auto auto;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guide-item {
+        flex: 1;
+        margin: 0;
+    }
+
+    .list-featured {
+        --cols: 2;
+    }
 }
 
 /* Tablet */
