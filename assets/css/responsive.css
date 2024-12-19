@@ -171,4 +171,111 @@
     .navbar .actions {
         display: none;
     }
+
+    .hero-wrap {
+        height: 100vh;
+    }
+
+    .hero .title {
+        margin-top: 20px;
+        font-size: 4.4rem;
+    }
+
+    .hero .desc {
+        width: 100%;
+        font-size: 1.6rem;   
+    }
+
+    .clients .desc-row {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+    }
+
+    .guides .desc {
+        width: 100%;
+    }
+
+    .list-guide {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .featured .link {
+        display: none;
+    }
+
+    .featured__cta {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .list-featured {
+        --cols: 1;
+    }
+
+    .stats .sub-title {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .stats .qty-desc  {
+        font-size: 1.8rem;
+    }
+    
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .stats-trend {
+        top: 20px;
+        left: 20px;
+        border-radius: 12px;
+    }
+    
+    .subscription .body {
+        height: auto;
+    }
+
+    .subscription .info {
+        padding: 32px;
+    }
+
+    .subscription .sub-title {
+        line-height: 1.2;
+    }
+
+    .footer .row:first-child {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .row:last-child {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 32px;
+    }
+}
+
+/* Mobile small */
+@media screen and (max-width: 575.98px) {
+    .content {
+        max-width: calc(100% - 32px);
+    }
+    
+    .hero .title {
+        font-size: 3.8rem;
+    }
+
+    .item-featured .info {
+        padding: 20px 10px;
+    }
+
+    .subscription .sub-title {
+        font-size: 3.4rem;
+    }
 }
