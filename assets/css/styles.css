@@ -125,6 +125,10 @@ a {
     font-weight: 500;
 }
 
+.navbar .action-link:hover {
+    text-decoration: underline;
+}
+
 .navbar .action-btn {
     margin-left: 18px;
     padding: 13px 16px;
@@ -587,13 +591,10 @@ a {
     padding-bottom: 58px;
 }
 
-.footer .row {
-    align-items: stretch;
-    gap: 185px;
-}
-
-.footer .column {
-    width: calc(100% / 4);
+.footer .row:first-child {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr;
+    column-gap: 185px;
 }
 
 .footer .heading {
@@ -614,6 +615,11 @@ a {
     color: #7A7A7E;
     font-size: 1.6rem;
     font-weight: 400;
+    white-space: nowrap;
+}
+
+.footer .item a:hover {
+    text-decoration: underline;
 }
 
 .footer .desc {
